@@ -1,0 +1,7 @@
+.random-drink-page-main{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-bright);
+}

@@ -1,0 +1,10 @@
+:root {
+  --background-bright: #f9f7f7;
+  --background-color: #dbe2ef;
+  --border: #3F72AF;
+}
+
+* {
+  background: var(--background-bright);
+  font-family: "Inconsolata", monospace;
+}
