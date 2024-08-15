@@ -8,10 +8,7 @@ interface IDetailedDrinkCardProps {
 }
 
 export default function DetailedDrinkCard({ drink }: IDetailedDrinkCardProps): ReactElement {
-  console.log(drink);
-
-  const ingredients: IIngredient[] | null | undefined = drink?.ingredients;
-
+  
   const tagsToRender = drink?.tags ? (
     <div className="tags">
       Tags:
@@ -22,6 +19,8 @@ export default function DetailedDrinkCard({ drink }: IDetailedDrinkCardProps): R
       ))}
     </div>
   ) : null;
+  
+  const ingredients: IIngredient[] | null | undefined = drink?.ingredients;
 
   return (
     <main className="detailed-main">
@@ -41,7 +40,6 @@ export default function DetailedDrinkCard({ drink }: IDetailedDrinkCardProps): R
           </div>
         ))}
       </section>
-
       <section>
         <img src={drink?.thumbnail} alt="" className="image-section" />
       </section>
