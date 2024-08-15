@@ -15,7 +15,7 @@ export function PaginatedItems({ itemsPerPage, items }: IPaginatedItemsProps) {
 
   const endOffset: number = itemOffset + itemsPerPage;
   console.log(`Loading items from ${itemOffset} to ${endOffset}`);
-  const currentItems = items.slice(itemOffset, endOffset);
+  const currentItems: (IDetailedDrink | undefined)[]  = items.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(items.length / itemsPerPage);
 
   const handlePageClick = (event: { selected: number }) => {
