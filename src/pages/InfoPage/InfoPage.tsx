@@ -16,8 +16,6 @@ export default function InfoPage() {
   }, [id]);
 
   const detailedDrink : IDetailedDrink | undefined = useConvertDetailedDrink(data?.drinks[0]);
-  console.log(detailedDrink);
-  console.log(typeof detailedDrink);
 
   return (
     <main className="infopage-main">
