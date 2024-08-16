@@ -11,6 +11,14 @@ import './RandomDrinkPage.css';
 export default function RandomDrinkPage() {
   const { data, isLoading, error, refresh } = useFetchData("random.php");
 
+  if(error){
+    return(
+      <div>
+        There was an error. Try to refresh the page.
+      </div>
+    )
+  }
+
   const detailedDrink: IDetailedDrinkResponse | undefined = data?.drinks[0];
 
   const drink: IDetailedDrink | undefined =
