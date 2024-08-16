@@ -16,7 +16,7 @@ export default function LargeDrinkCard({ drink, refresh }: LargeDrinkCardProps) 
       </div>
       <h2>{drink?.drinkName}</h2>
       <Link to={`/cocktail-info/${drink?.id}`}>Read more</Link>
-      <button onClick={refresh}>Not your taste? Click here to generate an new random drink</button>
+      <button onClick={refresh}>Not your taste? Click here to generate a new random drink</button>
     </main>
   );
 }
